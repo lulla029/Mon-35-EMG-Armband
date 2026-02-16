@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Raw EMG Data</h1>
+    <div id="l-val">0</div>
+    <script>
+        const socket = new WebSocket('ws://localhost:8081');
+        socket.onmessage = (e) => { document.getElementById('l-val').innerText = e.data; };
+    </script>
+</body>
+</html>

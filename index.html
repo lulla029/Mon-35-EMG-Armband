@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>EMG Waveform Test</title>
+    <!-- Load Chart.js (used for dawing waveform graph) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- External CSS file for styling -->
+    <link rel="stylesheet" href="mark.css">
+</head>
 <body>
-    <h1>Raw EMG Data</h1>
-    <div id="l-val">0</div>
-    <script>
-        const socket = new WebSocket('ws://localhost:8081');
-        socket.onmessage = (e) => { document.getElementById('l-val').innerText = e.data; };
-    </script>
+    <h1>Muscle Activity</h1>
+
+    <!-- Display box showing latest data values from EMG sensor -->
+    <div class="num-display" id="l-val">0</div>
+    <div style="width: 80%; margin: auto;">
+        
+        <!-- Canvas element where Chart.js will draw the EMG waveform -->
+        <canvas id="leftChart"></canvas>
+    </div>
+
+    <!-- JS file handles EMG graph logic -->
+    <script src="mark.js"></script>
 </body>
 </html>

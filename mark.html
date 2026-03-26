@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Team Mon-35 | Prototype Dashboard</title>
+    <link rel="stylesheet" href="mark.css">
+    <script src="chart.js"></script></head>
+<body>
+    <div class="nav">
+        <h1>TEAM MON-35: EMG ANALYZER</h1>
+        <div id="status">LIVE DATA</div>
+    </div>
+
+    <div class="dashboard">
+        <div class="muscle-box">
+            <h2>LEFT BICEP</h2>
+            <div class="num-display" id="l-val">0</div>
+            <canvas id="leftChart"></canvas>
+        </div>
+
+        <div class="muscle-box">
+            <h2 id="right-value">RIGHT BICEP</h2>
+            <div class="num-display" id="r-val">0</div>
+            <canvas id="rightChart"></canvas>
+        </div>
+    </div>
+
+    <script src="mark_2charts.js"></script>
+</body>
+</html>

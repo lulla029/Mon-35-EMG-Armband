@@ -1,0 +1,52 @@
+:root {
+    color-scheme: dark;
+    --l-color: #00f2ff;
+    --r-color: #DC143C;
+}
+
+body {
+    background-color: #080808;
+    color: var(--l-color);
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+}
+ 
+#status {
+    margin-top: 70px;
+}
+
+.nav {
+    background: #111;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid #333;
+}
+ 
+.dashboard {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+}
+ 
+.muscle-box {
+    background: #121212;
+    border: 1px solid #333;
+    border-radius: 20px;
+    padding: 20px 20px 135px 20px;
+    width: 43%;
+}
+ 
+.num-display {
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+#r-val{
+    color: var(--r-color);
+}
+
+#right-value{
+    color: var(--r-color);
+}

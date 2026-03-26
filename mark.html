@@ -5,7 +5,6 @@
     <title>Team Mon-35 | Prototype Dashboard</title>
     <!-- Linking my external CSS file for styling -->
     <link rel="stylesheet" href="mark.css">
-
     <!-- Loading Chart.js so I can draw the graphs -->
     <script src="chart.js"></script></head>
 <body>
@@ -20,15 +19,13 @@
             <div class="num-display" id="l-val">0</div>
             <canvas id="leftChart"></canvas>
         </div>
- 
+
         <div class="muscle-box">
-            <h2>RIGHT BICEP</h2>
+            <h2 id="right-value">RIGHT BICEP</h2>
             <div class="num-display" id="r-val">0</div>
             <canvas id="rightChart"></canvas>
         </div>
     </div>
- 
     <!-- My JavaScript file that handles live data + charts -->
-    <script src="mark.js"></script>
+    <script src="mark_2charts.js"></script>
 </body>
-</html>

@@ -1,6 +1,6 @@
-import requests # Helps make HTTP requests to the ESP sensor (GET /sensor)
-import asyncio # keeps track of all tasks simanteously
-import websockets #used to create websocket server to send data to the website
+import requests
+import asyncio
+import websockets
 
 # This function bridges data from the ESP (HTTP) to the browser (WebSocket)
 async def handler(websocket):

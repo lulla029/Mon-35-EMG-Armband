@@ -1,4 +1,10 @@
 /* Basic page styling */
+:root {
+    color-scheme: dark;
+    --l-color: #00f2ff;
+    --r-color: #DC143C;
+}
+
 body {
     background-color: #080808;   
     color: #00f2ff;            
@@ -41,3 +47,12 @@ body {
     font-size: 4rem;           
     font-weight: 800;            /* bold for emphasis */
 }
+
+#r-val{
+    color: var(--r-color);
+}
+
+#right-value{
+    color: var(--r-color);
+}
+
